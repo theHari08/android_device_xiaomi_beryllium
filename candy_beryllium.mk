@@ -9,6 +9,12 @@ $(call inherit-product, device/xiaomi/beryllium/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/candy/config/common_full_phone.mk)
 
+#GApps
+INCLUDE_GAPPS := true
+
+#its official
+CANDY_BUILD_TYPE := OFFICIAL
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := candy_beryllium
 PRODUCT_DEVICE := beryllium
